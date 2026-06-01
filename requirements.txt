@@ -4,4 +4,4 @@ langchain-community
 langchain-text-splitters
 faiss-cpu
 pypdf
-zhipuai
+zhipuai==2.0.1
