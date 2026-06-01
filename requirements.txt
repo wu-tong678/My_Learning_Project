@@ -1,7 +1,7 @@
 streamlit
-langchain
+langchain==0.3.0
 langchain-community
+langchain-text-splitters
 faiss-cpu
 pypdf
 zhipuai
-langchain-text-splitters
