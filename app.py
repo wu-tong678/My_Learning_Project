@@ -1,9 +1,9 @@
 import streamlit as st
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import ZhipuAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.chat_models import ChatZhipuAI
-from langchain.chains import RetrievalQA
+from langchain.chains.retrieval_qa.base import RetrievalQA
 import os
 
 st.title("📚 PDF智能问答助手")
