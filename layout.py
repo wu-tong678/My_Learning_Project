@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import json
-
+import os
 # 页面配置
 st.set_page_config(page_title="推送排版小助手", page_icon="📝", layout="centered")
 
@@ -24,7 +24,7 @@ with st.sidebar:
     st.markdown("- 可以描述活动时间、地点、亮点")
 
 # 你的智谱API Key（替换成你自己的）
-API_KEY = "1017a85ed2874e23983ac4ec8b17f951.FvXi975NPHkrEgQq"
+os.getenv("ZHIPU_API_KEY")
 
 
 # 调用大模型的函数
